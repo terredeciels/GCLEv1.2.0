@@ -1,0 +1,1342 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+157062**----------New game---2016-06-19 09:26:33,800 dim. -------------
+157062 >first : level 0 5 0
+157062 >first : new
+157062 >first : random
+157062 >first : level 0 5 0
+157093 >first : post
+157093 >first : hard
+157093 >first : easy
+157093 >first : ping 13
+157093 <first : pong 13
+157093 >second : level 0 5 0
+157093 >second : new
+157093 >second : random
+157093 >second : level 0 5 0
+157093 >second : post
+157093 >second : hard
+157109 >second : easy
+157109 >second : ping 8
+157109 <second : pong 8
+161343 >second : ?
+161343 >second : force
+161343 >second : quit
+161375 <second : Error (unknown command): ?
+161718*2*--------------------------Starting engine 2 JChecs--------------------------
+161718*2*Configured Engine 2 Type:   WB2
+161718*2*Engine 2 dir: D:\Documents\CHESS\JChecs\dist
+161718*2*Engine 2 commandline: java -jar D:\Documents\CHESS\JChecs\dist\JChecs.jar 
+161843*2*Child Process Prio Adj:  PID 1636 conhost.exe
+161843*2*Engine 2 ProcessID: 7900
+161843*2*Engine 2 Prio:32 ThreadPrio:0
+161843 >second : xboard
+161843 >second : protover 2
+161937 <second : jChecs 0.2.0 started in xboard mode.
+161937 <second : feature analyze=0 colors=0 myname="jChecs 0.2.0" pause=0 ping=1 playother=0 san=1 setboard=1 sigint=0 sigterm=0 time=0 usermove=1 variants="normal" done=1
+161937 >second : accepted analyze
+161937 >second : accepted colors
+161937 >second : accepted pause
+161937 >second : accepted ping
+161937 >second : accepted playother
+161937 >second : accepted san
+161937 >second : accepted setboard
+161937 >second : accepted sigint
+161937 >second : accepted sigterm
+161937 >second : accepted time
+161937 >second : accepted usermove
+161937 >second : accepted variants
+161937 >second : accepted done
+161937*2*Child Process Prio Adj:  PID 1636 conhost.exe
+162187 >second : new
+162187 >second : random
+162187 >second : level 0 5 0
+162187 >second : post
+162187 >second : hard
+162187 >second : easy
+162187 >second : ping 6
+162187 <second : pong 6
+165390 >first : ?
+165390 >first : force
+165390 >first : quit
+165421 <first : Error (unknown command): ?
+165781*1*------Starting engine 1 GCLEv1.1.4-1.0-SNAPSHOT-jar-with-dependencies-------
+165781*1*Configured Engine 1 Type:   WB2
+165781*1*Engine 1 dir: D:\Documents\ECHECS\GCLEv1.1.4\target
+165781*1*Engine 1 commandline: java -jar D:\Documents\ECHECS\GCLEv1.1.4\target\GCLEv1.1.4-1.0-SNAPSHOT-jar-with-dependencies.jar 
+165906*1*Child Process Prio Adj:  PID 1248 conhost.exe
+165906*1*Engine 1 ProcessID: 3100
+165906*1*Engine 1 Prio:32 ThreadPrio:0
+165906 >first : xboard
+165906 >first : protover 2
+166000 <first : Enter command (debug):
+166000 <first : GCLE 1.0 started in xboard mode.
+166000 <first : feature analyze=0 colors=0 myname="GCLE 1.0" pause=0 ping=1 playother=0 san=1 setboard=1 sigint=0 sigterm=0 time=0 usermove=1 variants="normal" done=1
+166000 >first : accepted analyze
+166000 >first : accepted colors
+166000 >first : accepted pause
+166000 >first : accepted ping
+166000 >first : accepted playother
+166000 >first : accepted san
+166000 >first : accepted setboard
+166015 >first : accepted sigint
+166015 >first : accepted sigterm
+166015 >first : accepted time
+166015 >first : accepted usermove
+166015 >first : accepted variants
+166015 >first : accepted done
+166015*1*Child Process Prio Adj:  PID 1248 conhost.exe
+166265 >first : new
+166265 >first : random
+166265 >first : level 0 5 0
+166265 >first : post
+166265 >first : hard
+166265 >first : easy
+166265 >first : ping 5
+166265 <first : pong 5
+168640 >first : computer
+168640 >second : computer
+168656*1*Start calc, move no: 0
+168656 >first : level 0 5 0
+168656 >first : new
+168671 >first : random
+168671 >first : level 0 5 0
+168671 >first : post
+168671 >first : hard
+168671 >first : easy
+168671 >first : ping 10
+168671 <first : pong 10
+168671 >first : computer
+168671 >first : go
+168687 <first : move g4
+168687*1*Found move:g2g4
+168921*2*Start calc, move no: 1
+169000 >second : level 0 5 0
+169000 >second : new
+169000 >second : random
+169000 >second : level 0 5 0
+169000 >second : post
+169000 >second : hard
+169000 >second : easy
+169000 >second : ping 7
+169000 <second : pong 7
+169000 >second : computer
+169000 >second : usermove g4
+169015 <second : move b6
+169015*2*Found move:b7b6
+169328*1*Start calc, move no: 2
+169390 >first : usermove b6
+169390 <first : move a3
+169390*1*Found move:a2a3
+169609*2*Start calc, move no: 3
+169671 >second : usermove a3
+170250 <second : move Bb7
+170265*2*Found move:c8b7
+170500*1*Start calc, move no: 4
+170562 >first : usermove Bb7
+170562 <first : move Nh3
+170562*1*Found move:g1h3
+170796*2*Start calc, move no: 5
+170859 >second : usermove Nh3
+171187 <second : move Bxh1
+171187*2*Found move:b7h1
+171406*1*Start calc, move no: 6
+171468 >first : usermove Bxh1
+171468 <first : move f4
+171468*1*Found move:f2f4
+171687*2*Start calc, move no: 7
+171765 >second : usermove f4
+172375 <second : move e6
+172375*2*Found move:e7e6
+172593*1*Start calc, move no: 8
+172656 >first : usermove e6
+172656 <first : move Ng5
+172656*1*Found move:h3g5
+172890*2*Start calc, move no: 9
+172953 >second : usermove Ng5
+176015 <second : move Nh6
+176015*2*Found move:g8h6
+176234*1*Start calc, move no: 10
+176296 >first : usermove Nh6
+176296 <first : move Nc3
+176296*1*Found move:b1c3
+176531*2*Start calc, move no: 11
+176593 >second : usermove Nc3
+178015 <second : move f6
+178015*2*Found move:f7f6
+178234*1*Start calc, move no: 12
+178296 >first : usermove f6
+178296 <first : move Kf2
+178296*1*Found move:e1f2
+178515*2*Start calc, move no: 13
+178593 >second : usermove Kf2
+179109 <second : move fxg5
+179109*2*Found move:f6g5
+179343*1*Start calc, move no: 14
+179406 >first : usermove fxg5
+179406 <first : move Nb1
+179406*1*Found move:c3b1
+179625*2*Start calc, move no: 15
+179687 >second : usermove Nb1
+180234 <second : move Nxg4+
+180234*2*Found move:h6g4
+180468*1*Start calc, move no: 16
+180531 >first : usermove Nxg4
+180531 <first : move Kg1
+180531*1*Found move:f2g1
+180750*2*Start calc, move no: 17
+180812 >second : usermove Kg1
+181718 <second : move Be4
+181718*2*Found move:h1e4
+181937*1*Start calc, move no: 18
+182000 >first : usermove Be4
+182000 <first : move Ra2
+182000*1*Found move:a1a2
+182234*2*Start calc, move no: 19
+182296 >second : usermove Ra2
+183234 <second : move Bd5
+183234*2*Found move:e4d5
+183468*1*Start calc, move no: 20
+183531 >first : usermove Bd5
+183531 <first : move Nc3
+183531*1*Found move:b1c3
+183750*2*Start calc, move no: 21
+183828 >second : usermove Nc3
+184312 <second : move Bxa2
+184312*2*Found move:d5a2
+184546*1*Start calc, move no: 22
+184609 >first : usermove Bxa2
+184609 <first : move b4
+184609*1*Found move:b2b4
+184843*2*Start calc, move no: 23
+184906 >second : usermove b4
+185500 <second : move Bc4
+185500*2*Found move:a2c4
+185718*1*Start calc, move no: 24
+185781 >first : usermove Bc4
+185781 <first : move Nd5
+185781*1*Found move:c3d5
+186015*2*Start calc, move no: 25
+186078 >second : usermove Nd5
+186890 <second : move exd5
+186890*2*Found move:e6d5
+187125*1*Start calc, move no: 26
+187187 >first : usermove exd5
+187187 <first : move Bb2
+187187*1*Found move:c1b2
+187421*2*Start calc, move no: 27
+187484 >second : usermove Bb2
+188046 <second : move gxf4
+188046*2*Found move:g5f4
+188281*1*Start calc, move no: 28
+188343 >first : usermove gxf4
+188343 <first : move d4
+188343*1*Found move:d2d4
+188578*2*Start calc, move no: 29
+188640 >second : usermove d4
+189328 <second : move Qh4
+189328*2*Found move:d8h4
+189562*1*Start calc, move no: 30
+189625 >first : usermove Qh4
+189625 <first : move Kh1
+189625*1*Found move:g1h1
+189843*2*Start calc, move no: 31
+189906 >second : usermove Kh1
+192203 <second : move Qxh2++
+192203*2*Found move:h4h2
+192468 <second : 0-1 {Black mates}
+204734**----------New game---2016-06-19 09:27:21,457 dim. -------------
+204734 >first : level 0 5 0
+204734 >first : new
+204734 >first : random
+204734 >first : level 0 5 0
+204750 >first : post
+204750 >first : hard
+204750 >first : easy
+204750 >first : ping 12
+204750 <first : pong 12
+204750 >second : level 0 5 0
+204750 >second : new
+204750 >second : random
+204750 >second : level 0 5 0
+204750 >second : post
+204750 >second : hard
+204750 >second : easy
+204750 >second : ping 9
+204765 <second : pong 9
+208468 >first : computer
+208468 >second : computer
+208484*2*Start calc, move no: 0
+208484 >second : go
+208484 <second : move b4
+208484*2*Found move:b2b4
+208718*1*Start calc, move no: 1
+208781 >first : usermove b4
+208781 <first : move d6
+208781*1*Found move:d7d6
+209093*2*Start calc, move no: 2
+209156 >second : usermove d6
+209156 <second : move Bb2
+209156*2*Found move:c1b2
+209375*1*Start calc, move no: 3
+209437 >first : usermove Bb2
+209437 <first : move d5
+209437*1*Found move:d6d5
+209656*2*Start calc, move no: 4
+209718 >second : usermove d5
+211031 <second : move e3
+211031*2*Found move:e2e3
+211250*1*Start calc, move no: 5
+211312 >first : usermove e3
+211312 <first : move c6
+211312*1*Found move:c7c6
+211531*2*Start calc, move no: 6
+211593 >second : usermove c6
+214203 <second : move Nf3
+214203*2*Found move:g1f3
+214437*1*Start calc, move no: 7
+214500 >first : usermove Nf3
+214500 <first : move g5
+214500*1*Found move:g7g5
+214718*2*Start calc, move no: 8
+214781 >second : usermove g5
+215890 <second : move Bxh8
+215890*2*Found move:b2h8
+216125*1*Start calc, move no: 9
+216187 >first : usermove Bxh8
+216187 <first : move f6
+216187*1*Found move:f7f6
+216406*2*Start calc, move no: 10
+216468 >second : usermove f6
+218953 <second : move Nc3
+218953*2*Found move:b1c3
+219171*1*Start calc, move no: 11
+219234 >first : usermove Nc3
+219234 <first : move Be6
+219234*1*Found move:c8e6
+219468*2*Start calc, move no: 12
+219531 >second : usermove Be6
+222406 <second : move Nd4
+222406*2*Found move:f3d4
+222640*1*Start calc, move no: 13
+222703 >first : usermove Nd4
+222703 <first : move h5
+222703*1*Found move:h7h5
+222921*2*Start calc, move no: 14
+222984 >second : usermove h5
+223515 <second : move Nxe6
+223515*2*Found move:d4e6
+223750*1*Start calc, move no: 15
+223812 >first : usermove Nxe6
+223812 <first : move Nh6
+223812*1*Found move:g8h6
+224031*2*Start calc, move no: 16
+224093 >second : usermove Nh6
+224937 <second : move Qxh5+
+224937*2*Found move:d1h5
+225171*1*Start calc, move no: 17
+225234 >first : usermove Qxh5
+225234 <first : move Kd7
+225234*1*Found move:e8d7
+225453*2*Start calc, move no: 18
+225515 >second : usermove Kd7
+226531 <second : move Nxd8
+226531*2*Found move:e6d8
+226765*1*Start calc, move no: 19
+226828 >first : usermove Nxd8
+226828 <first : move Bg7
+226828*1*Found move:f8g7
+227046*2*Start calc, move no: 20
+227109 >second : usermove Bg7
+227671 <second : move Bxg7
+227671*2*Found move:h8g7
+227890*1*Start calc, move no: 21
+227953 >first : usermove Bxg7
+227953 <first : move c5
+227953*1*Found move:c6c5
+228187*2*Start calc, move no: 22
+228250 >second : usermove c5
+229062 <second : move Qxh6
+229062*2*Found move:h5h6
+229296*1*Start calc, move no: 23
+229359 >first : usermove Qxh6
+229359 <first : move f5
+229359*1*Found move:f6f5
+229593*2*Start calc, move no: 24
+229671 >second : usermove f5
+230531 <second : move Nxb7
+230531*2*Found move:d8b7
+230765*1*Start calc, move no: 25
+230828 >first : usermove Nxb7
+230828 <first : move a5
+230828*1*Found move:a7a5
+231062*2*Start calc, move no: 26
+231125 >second : usermove a5
+232625 <second : move Nxc5+
+232625*2*Found move:b7c5
+232843*1*Start calc, move no: 27
+232906 >first : usermove Nxc5
+232906 <first : move Kc7
+232906*1*Found move:d7c7
+233125*2*Start calc, move no: 28
+233187 >second : usermove Kc7
+236093 <second : move Qe6
+236093*2*Found move:h6e6
+236328*1*Start calc, move no: 29
+236390 >first : usermove Qe6
+236390 <first : move Ra6
+236390*1*Found move:a8a6
+236625*2*Start calc, move no: 30
+236687 >second : usermove Ra6
+238562 <second : move Nb5+
+238562*2*Found move:c3b5
+238796*1*Start calc, move no: 31
+238859 >first : usermove Nb5
+238859 <first : move Kd8
+238859*1*Found move:c7d8
+239093*2*Start calc, move no: 32
+239156 >second : usermove Kd8
+241421 <second : move Qf7
+241421*2*Found move:e6f7
+241656*1*Start calc, move no: 33
+241718 >first : usermove Qf7
+241718 <first : move Nd7
+241718*1*Found move:b8d7
+241953*2*Start calc, move no: 34
+242015 >second : usermove Nd7
+243875 <second : move Qg8+
+243875*2*Found move:f7g8
+244109*1*Start calc, move no: 35
+244171 >first : usermove Qg8
+244171 <first : move Nf8
+244171*1*Found move:d7f8
+244406*2*Start calc, move no: 36
+244484 >second : usermove Nf8
+270031 <second : move 0-0-0
+270031*2*Found move:e1c1
+270250*1*Start calc, move no: 37
+270312 >first : usermove O-O-O
+270312 <first : move e5
+270312*1*Found move:e7e5
+270531*2*Start calc, move no: 38
+270609 >second : usermove e5
+273531 <second : move Qxf8++
+273531*2*Found move:g8f8
+273765 <second : 1-0 {White mates}
+286609**----------New game---2016-06-19 09:28:43,346 dim. -------------
+286609 >first : level 0 5 0
+286609 >first : new
+286609 >first : random
+286609 >first : level 0 5 0
+286625 >first : post
+286625 >first : hard
+286625 >first : easy
+286625 >first : ping 18
+286640 <first : pong 18
+286640 >second : level 0 5 0
+286640 >second : new
+286640 >second : random
+286640 >second : level 0 5 0
+286640 >second : post
+286640 >second : hard
+286640 >second : easy
+286640 >second : ping 11
+286656 <second : pong 11
+288093 >first : computer
+288093 >second : computer
+288109*2*Start calc, move no: 0
+288109 >second : go
+288109 <second : move c4
+288109*2*Found move:c2c4
+288328*1*Start calc, move no: 1
+288390 >first : usermove c4
+288390 <first : move h5
+288390*1*Found move:h7h5
+288703*2*Start calc, move no: 2
+288781 >second : usermove h5
+288781 <second : move Nf3
+288781*2*Found move:g1f3
+289000*1*Start calc, move no: 3
+289062 >first : usermove Nf3
+289062 <first : move Na6
+289062*1*Found move:b8a6
+289281*2*Start calc, move no: 4
+289343 >second : usermove Na6
+290531 <second : move d3
+290531*2*Found move:d2d3
+290765*1*Start calc, move no: 5
+290828 >first : usermove d3
+290828 <first : move f5
+290828*1*Found move:f7f5
+291062*2*Start calc, move no: 6
+291125 >second : usermove f5
+292468 <second : move Bg5
+292468*2*Found move:c1g5
+292703*1*Start calc, move no: 7
+292765 >first : usermove Bg5
+292765 <first : move Nf6
+292765*1*Found move:g8f6
+292984*2*Start calc, move no: 8
+293062 >second : usermove Nf6
+294562 <second : move Nbd2
+294562*2*Found move:b1d2
+294796*1*Start calc, move no: 9
+294859 >first : usermove Nbd2
+294859 <first : move g6
+294859*1*Found move:g7g6
+295078*2*Start calc, move no: 10
+295140 >second : usermove g6
+296515 <second : move Ne5
+296515*2*Found move:f3e5
+296734*1*Start calc, move no: 11
+296796 >first : usermove Ne5
+296796 <first : move Nb4
+296796*1*Found move:a6b4
+297015*2*Start calc, move no: 12
+297078 >second : usermove Nb4
+298000 <second : move Nxg6
+298000*2*Found move:e5g6
+298218*1*Start calc, move no: 13
+298281 >first : usermove Nxg6
+298281 <first : move Na6
+298281*1*Found move:b4a6
+298500*2*Start calc, move no: 14
+298562 >second : usermove Na6
+298921 <second : move Nxh8
+298921*2*Found move:g6h8
+299140*1*Start calc, move no: 15
+299203 >first : usermove Nxh8
+299203 <first : move f4
+299203*1*Found move:f5f4
+299437*2*Start calc, move no: 16
+299500 >second : usermove f4
+300078 <second : move Ng6
+300078*2*Found move:h8g6
+300296*1*Start calc, move no: 17
+300359 >first : usermove Ng6
+300359 <first : move Nh7
+300359*1*Found move:f6h7
+300578*2*Start calc, move no: 18
+300656 >second : usermove Nh7
+300984 <second : move Bxf4
+300984*2*Found move:g5f4
+301203*1*Start calc, move no: 19
+301265 >first : usermove Bxf4
+301265 <first : move e6
+301265*1*Found move:e7e6
+301500*2*Start calc, move no: 20
+301562 >second : usermove e6
+302375 <second : move Nxf8
+302375*2*Found move:g6f8
+302609*1*Start calc, move no: 21
+302671 >first : usermove Nxf8
+302671 <first : move Nc5
+302671*1*Found move:a6c5
+302906*2*Start calc, move no: 22
+302968 >second : usermove Nc5
+303203 <second : move Nxh7
+303203*2*Found move:f8h7
+303437*1*Start calc, move no: 23
+303500 >first : usermove Nxh7
+303500 <first : move Qg5
+303500*1*Found move:d8g5
+303718*2*Start calc, move no: 24
+303781 >second : usermove Qg5
+304125 <second : move Bxg5
+304140*2*Found move:f4g5
+304375*1*Start calc, move no: 25
+304437 >first : usermove Bxg5
+304437 <first : move a5
+304437*1*Found move:a7a5
+304671*2*Start calc, move no: 26
+304734 >second : usermove a5
+305515 <second : move Nf6+
+305515*2*Found move:h7f6
+305750*1*Start calc, move no: 27
+305812 >first : usermove Nf6
+305812 <first : move Kf8
+305812*1*Found move:e8f8
+306031*2*Start calc, move no: 28
+306093 >second : usermove Kf8
+307312 <second : move d4
+307312*2*Found move:d3d4
+307531*1*Start calc, move no: 29
+307609 >first : usermove d4
+307609 <first : move Nd3
+307609*1*Found move:c5d3
+307812*2*Start calc, move no: 30
+307890 >second : usermove Nd3
+308015 <second : move exd3
+308015*2*Found move:e2d3
+308250*1*Start calc, move no: 31
+308312 >first : usermove exd3
+308312 <first : move d5
+308312*1*Found move:d7d5
+308546*2*Start calc, move no: 32
+308609 >second : usermove d5
+309593 <second : move Qxh5
+309593*2*Found move:d1h5
+309812*1*Start calc, move no: 33
+309875 >first : usermove Qxh5
+309875 <first : move Kg7
+309875*1*Found move:f8g7
+310109*2*Start calc, move no: 34
+310171 >second : usermove Kg7
+315890 <second : move Ke2
+315890*2*Found move:e1e2
+316109*1*Start calc, move no: 35
+316171 >first : usermove Ke2
+316171 <first : move Kf8
+316171*1*Found move:g7f8
+316406*2*Start calc, move no: 36
+316468 >second : usermove Kf8
+323031 <second : move Kf3
+323046*2*Found move:e2f3
+323265*1*Start calc, move no: 37
+323328 >first : usermove Kf3
+323328 <first : move a4
+323328*1*Found move:a5a4
+323546*2*Start calc, move no: 38
+323625 >second : usermove a4
+329468 <second : move a3
+329468*2*Found move:a2a3
+329703*1*Start calc, move no: 39
+329765 >first : usermove a3
+329765 <first : move Ra6
+329765*1*Found move:a8a6
+329984*2*Start calc, move no: 40
+330062 >second : usermove Ra6
+336218 <second : move Kg3
+336218*2*Found move:f3g3
+336453*1*Start calc, move no: 41
+336515 >first : usermove Kg3
+336515 <first : move c6
+336515*1*Found move:c7c6
+336750*2*Start calc, move no: 42
+336812 >second : usermove c6
+339437 <second : move c5
+339453*2*Found move:c4c5
+339687*1*Start calc, move no: 43
+339750 >first : usermove c5
+339750 <first : move Ke7
+339750*1*Found move:f8e7
+339968*2*Start calc, move no: 44
+340031 >second : usermove Ke7
+344046 <second : move Kh4
+344046*2*Found move:g3h4
+344281*1*Start calc, move no: 45
+344343 >first : usermove Kh4
+344343 <first : move Ra7
+344343*1*Found move:a6a7
+344562*2*Start calc, move no: 46
+344640 >second : usermove Ra7
+347812 <second : move Kg3
+347812*2*Found move:h4g3
+348046*1*Start calc, move no: 47
+348109 >first : usermove Kg3
+348109 <first : move Ra6
+348109*1*Found move:a7a6
+348343*2*Start calc, move no: 48
+348406 >second : usermove Ra6
+352375 <second : move Kf3
+352375*2*Found move:g3f3
+352593*1*Start calc, move no: 49
+352656 >first : usermove Kf3
+352656 <first : move Kd8
+352656*1*Found move:e7d8
+352906*2*Start calc, move no: 50
+352984 >second : usermove Kd8
+354296 <second : move Ne8+
+354296*2*Found move:f6e8
+354531*1*Start calc, move no: 51
+354593 >first : usermove Ne8
+354593 <first : move Kd7
+354593*1*Found move:d8d7
+354812*2*Start calc, move no: 52
+354875 >second : usermove Kd7
+359109 <second : move Kf4
+359109*2*Found move:f3f4
+359328*1*Start calc, move no: 53
+359390 >first : usermove Kf4
+359390 <first : move b6
+359390*1*Found move:b7b6
+359625*2*Start calc, move no: 54
+359687 >second : usermove b6
+361750 <second : move Ke5
+361750*2*Found move:f4e5
+361968*1*Start calc, move no: 55
+362031 >first : usermove Ke5
+362031 <first : move Bb7
+362031*1*Found move:c8b7
+362250*2*Start calc, move no: 56
+362312 >second : usermove Bb7
+364203 <second : move Qh7+
+364203*2*Found move:h5h7
+364437*1*Start calc, move no: 57
+364500 >first : usermove Qh7
+364500 <first : move Kc8
+364500*1*Found move:d7c8
+364718*2*Start calc, move no: 58
+364796 >second : usermove Kc8
+366046 <second : move Qc7++
+366046*2*Found move:h7c7
+366281 <second : 1-0 {White mates}
+377640**----------New game---2016-06-19 09:30:14,378 dim. -------------
+377640 >first : level 0 5 0
+377640 >first : new
+377656 >first : random
+377656 >first : level 0 5 0
+377671 >first : post
+377671 >first : hard
+377671 >first : easy
+377671 >first : ping 19
+377671 <first : pong 19
+377671 >second : level 0 5 0
+377671 >second : new
+377671 >second : random
+377671 >second : level 0 5 0
+377671 >second : post
+377671 >second : hard
+377671 >second : easy
+377671 >second : ping 17
+377687 <second : pong 17
+379515 >first : computer
+379515 >second : computer
+379531*2*Start calc, move no: 0
+379531 >second : go
+379531 <second : move b4
+379531*2*Found move:b2b4
+379750*1*Start calc, move no: 1
+379812 >first : usermove b4
+379812 <first : move c6
+379812*1*Found move:c7c6
+380046*2*Start calc, move no: 2
+380109 >second : usermove c6
+380109 <second : move e4
+380109*2*Found move:e2e4
+380328*1*Start calc, move no: 3
+380390 >first : usermove e4
+380390 <first : move g6
+380390*1*Found move:g7g6
+380609*2*Start calc, move no: 4
+380671 >second : usermove g6
+381406 <second : move Bb2
+381406*2*Found move:c1b2
+381625*1*Start calc, move no: 5
+381687 >first : usermove Bb2
+381687 <first : move Bh6
+381687*1*Found move:f8h6
+381906*2*Start calc, move no: 6
+381968 >second : usermove Bh6
+382312 <second : move Bxh8
+382312*2*Found move:b2h8
+382531*1*Start calc, move no: 7
+382593 >first : usermove Bxh8
+382593 <first : move f5
+382593*1*Found move:f7f5
+382812*2*Start calc, move no: 8
+382875 >second : usermove f5
+383312 <second : move exf5
+383312*2*Found move:e4f5
+383546*1*Start calc, move no: 9
+383609 >first : usermove exf5
+383609 <first : move g5
+383609*1*Found move:g6g5
+383843*2*Start calc, move no: 10
+383921 >second : usermove g5
+384968 <second : move Qh5+
+384984*2*Found move:d1h5
+385218*1*Start calc, move no: 11
+385281 >first : usermove Qh5
+385281 <first : move Kf8
+385281*1*Found move:e8f8
+385515*2*Start calc, move no: 12
+385578 >second : usermove Kf8
+387656 <second : move g4
+387656*2*Found move:g2g4
+387890*1*Start calc, move no: 13
+387953 >first : usermove g4
+387953 <first : move Na6
+387953*1*Found move:b8a6
+388171*2*Start calc, move no: 14
+388234 >second : usermove Na6
+389125 <second : move Bc3
+389125*2*Found move:h8c3
+389343*1*Start calc, move no: 15
+389406 >first : usermove Bc3
+389406 <first : move Qc7
+389406*1*Found move:d8c7
+389625*2*Start calc, move no: 16
+389703 >second : usermove Qc7
+391218 <second : move Bd3
+391218*2*Found move:f1d3
+391437*1*Start calc, move no: 17
+391500 >first : usermove Bd3
+391500 <first : move Qg3
+391500*1*Found move:c7g3
+391718*2*Start calc, move no: 18
+391796 >second : usermove Qg3
+392203 <second : move hxg3
+392203*2*Found move:h2g3
+392421*1*Start calc, move no: 19
+392484 >first : usermove hxg3
+392484 <first : move Nb8
+392484*1*Found move:a6b8
+392703*2*Start calc, move no: 20
+392781 >second : usermove Nb8
+394046 <second : move Nf3
+394046*2*Found move:g1f3
+394281*1*Start calc, move no: 21
+394343 >first : usermove Nf3
+394343 <first : move Nf6
+394343*1*Found move:g8f6
+394578*2*Start calc, move no: 22
+394640 >second : usermove Nf6
+395078 <second : move Qxh6+
+395078*2*Found move:h5h6
+395312*1*Start calc, move no: 23
+395375 >first : usermove Qxh6
+395375 <first : move Ke8
+395375*1*Found move:f8e8
+395593*2*Start calc, move no: 24
+395656 >second : usermove Ke8
+397062 <second : move Qxg5
+397062*2*Found move:h6g5
+397281*1*Start calc, move no: 25
+397343 >first : usermove Qxg5
+397343 <first : move Kf7
+397343*1*Found move:e8f7
+397562*2*Start calc, move no: 26
+397640 >second : usermove Kf7
+398609 <second : move Bxf6
+398609*2*Found move:c3f6
+398843*1*Start calc, move no: 27
+398906 >first : usermove Bxf6
+398906 <first : move d5
+398906*1*Found move:d7d5
+399140*2*Start calc, move no: 28
+399203 >second : usermove d5
+400250 <second : move Ne5+
+400250*2*Found move:f3e5
+400500*1*Start calc, move no: 29
+400562 >first : usermove Ne5
+400562 <first : move Ke8
+400562*1*Found move:f7e8
+400796*2*Start calc, move no: 30
+400859 >second : usermove Ke8
+402437 <second : move Qg7
+402437*2*Found move:g5g7
+402656*1*Start calc, move no: 31
+402718 >first : usermove Qg7
+402718 <first : move Nd7
+402718*1*Found move:b8d7
+402953*2*Start calc, move no: 32
+403015 >second : usermove Nd7
+408640 <second : move Bxe7
+408656*2*Found move:f6e7
+408875*1*Start calc, move no: 33
+408937 >first : usermove Bxe7
+408937 <first : move d4
+408937*1*Found move:d5d4
+409171*2*Start calc, move no: 34
+409234 >second : usermove d4
+444937 <second : move 0-0
+444937*2*Found move:e1g1
+445171*1*Start calc, move no: 35
+445234 >first : usermove O-O
+445234 <first : move b6
+445234*1*Found move:b7b6
+445468*2*Start calc, move no: 36
+445531 >second : usermove b6
+470031 <second : move Kg2
+470031*2*Found move:g1g2
+470265*1*Start calc, move no: 37
+470328 >first : usermove Kg2
+470328 <first : move a6
+470328*1*Found move:a7a6
+470546*2*Start calc, move no: 38
+470625 >second : usermove a6
+497484 <second : move a3
+497500*2*Found move:a2a3
+497687*1*Start calc, move no: 39
+497750 >first : usermove a3
+497750 <first : move Ra7
+497750*1*Found move:a8a7
+497937*2*Start calc, move no: 40
+498015 >second : usermove Ra7
+512546 <second : move Kh3
+512562*2*Found move:g2h3
+512781*1*Start calc, move no: 41
+512843 >first : usermove Kh3
+512843 <first : move Nf8
+512843*1*Found move:d7f8
+513078*2*Start calc, move no: 42
+513140 >second : usermove Nf8
+514437 <second : move f6
+514437*2*Found move:f5f6
+514640*1*Start calc, move no: 43
+514703 >first : usermove f6
+514703 <first : move Bd7
+514703*1*Found move:c8d7
+514921*2*Start calc, move no: 44
+514984 >second : usermove Bd7
+524125 <second : move Kh2
+524140*2*Found move:h3h2
+524375*1*Start calc, move no: 45
+524437 >first : usermove Kh2
+524437 <first : move Bc8
+524437*1*Found move:d7c8
+524656*2*Start calc, move no: 46
+524718 >second : usermove Bc8
+585421 <second : move Kg1
+585421*2*Found move:h2g1
+585656*1*Start calc, move no: 47
+585718 >first : usermove Kg1
+585718 <first : move Bf5
+585718*1*Found move:c8f5
+585937*2*Start calc, move no: 48
+586000 >second : usermove Bf5
+638625 <second : move Kg2
+638625*2*Found move:g1g2
+638859*1*Start calc, move no: 49
+638921 >first : usermove Kg2
+638921 <first : move Bxg4
+638921*1*Found move:f5g4
+639156*2*Start calc, move no: 50
+639218 >second : usermove Bxg4
+667859 <second : move Kh1
+667859*2*Found move:g2h1
+668078*1*Start calc, move no: 51
+668140 >first : usermove Kh1
+668140 <first : move Bh5
+668140*1*Found move:g4h5
+668375*2*Start calc, move no: 52
+668437 >second : usermove Bh5
+681625 <second : move Kg2
+681625*2*Found move:h1g2
+681843*1*Start calc, move no: 53
+681906 >first : usermove Kg2
+681906 <first : move Bf7
+681906*1*Found move:h5f7
+682140*2*Start calc, move no: 54
+682203 >second : usermove Bf7
+683156 <second : move Qxf7++
+683156*2*Found move:g7f7
+683390 <second : 1-0 {White mates}
+708093**----------New game---2016-06-19 09:35:44,828 dim. -------------
+708093 >first : level 0 5 0
+708093 >first : new
+708093 >first : random
+708093 >first : level 0 5 0
+708109 >first : post
+708109 >first : hard
+708109 >first : easy
+708109 >first : ping 23
+708125 <first : pong 23
+708125 >second : level 0 5 0
+708125 >second : new
+708125 >second : random
+708125 >second : level 0 5 0
+708125 >second : post
+708125 >second : hard
+708125 >second : easy
+708125 >second : ping 23
+708125 <second : pong 23
+716750 >second : ?
+716750 >second : force
+716750 >second : quit
+716765 <second : Error (unknown command): ?
+717125*2*--------------------------Starting engine 2 JChecs--------------------------
+717125*2*Configured Engine 2 Type:   WB2
+717125*2*Engine 2 dir: D:\Documents\CHESS\JChecs\dist
+717125*2*Engine 2 commandline: java -jar D:\Documents\CHESS\JChecs\dist\JChecs.jar 
+717250*2*Child Process Prio Adj:  PID 4828 conhost.exe
+717265*2*Engine 2 ProcessID: 7888
+717265*2*Engine 2 Prio:32 ThreadPrio:0
+717265 >second : xboard
+717265 >second : protover 2
+717359 <second : jChecs 0.2.0 started in xboard mode.
+717359 <second : feature analyze=0 colors=0 myname="jChecs 0.2.0" pause=0 ping=1 playother=0 san=1 setboard=1 sigint=0 sigterm=0 time=0 usermove=1 variants="normal" done=1
+717359 >second : accepted analyze
+717359 >second : accepted colors
+717359 >second : accepted pause
+717359 >second : accepted ping
+717359 >second : accepted playother
+717359 >second : accepted san
+717359 >second : accepted setboard
+717359 >second : accepted sigint
+717359 >second : accepted sigterm
+717359 >second : accepted time
+717359 >second : accepted usermove
+717359 >second : accepted variants
+717359 >second : accepted done
+717359*2*Child Process Prio Adj:  PID 4828 conhost.exe
+717578 >second : new
+717578 >second : random
+717578 >second : level 0 5 0
+717578 >second : post
+717578 >second : hard
+717578 >second : easy
+717578 >second : ping 5
+717593 <second : pong 5
+721593 >first : ?
+721593 >first : force
+721593 >first : quit
+721625 <first : Error (unknown command): ?
+721968*1*------Starting engine 1 GCLEv1.1.4-1.0-SNAPSHOT-jar-with-dependencies-------
+721984*1*Configured Engine 1 Type:   WB2
+721984*1*Engine 1 dir: D:\Documents\ECHECS\GCLEv1.1.4\target
+721984*1*Engine 1 commandline: java -jar D:\Documents\ECHECS\GCLEv1.1.4\target\GCLEv1.1.4-1.0-SNAPSHOT-jar-with-dependencies.jar 
+722109*1*Child Process Prio Adj:  PID 5896 conhost.exe
+722140*1*Engine 1 ProcessID: 6176
+722140*1*Engine 1 Prio:32 ThreadPrio:0
+722140 >first : xboard
+722140 >first : protover 2
+722234 <first : Enter command (debug):
+722234 <first : GCLE 1.0 started in xboard mode.
+722234 <first : feature analyze=0 colors=0 myname="GCLE 1.0" pause=0 ping=1 playother=0 san=1 setboard=1 sigint=0 sigterm=0 time=0 usermove=1 variants="normal" done=1
+722234 >first : accepted analyze
+722234 >first : accepted colors
+722234 >first : accepted pause
+722234 >first : accepted ping
+722234 >first : accepted playother
+722234 >first : accepted san
+722234 >first : accepted setboard
+722234 >first : accepted sigint
+722234 >first : accepted sigterm
+722234 >first : accepted time
+722234 >first : accepted usermove
+722234 >first : accepted variants
+722234 >first : accepted done
+722250*1*Child Process Prio Adj:  PID 5896 conhost.exe
+722468 >first : new
+722468 >first : random
+722468 >first : level 0 5 0
+722468 >first : post
+722468 >first : hard
+722468 >first : easy
+722468 >first : ping 2
+722484 <first : pong 2
+726015 >first : computer
+726015 >second : computer
+726031*1*Start calc, move no: 0
+726031 >first : level 0 5 0
+726031 >first : new
+726031 >first : random
+726031 >first : level 0 5 0
+726031 >first : post
+726031 >first : hard
+726031 >first : easy
+726031 >first : ping 8
+726046 <first : pong 8
+726046 >first : computer
+726046 >first : go
+726062 <first : move b4
+726062*1*Found move:b2b4
+726281*2*Start calc, move no: 1
+726343 >second : level 0 5 0
+726343 >second : new
+726343 >second : random
+726343 >second : level 0 5 0
+726343 >second : post
+726343 >second : hard
+726343 >second : easy
+726343 >second : ping 11
+726343 <second : pong 11
+726343 >second : computer
+726343 >second : usermove b4
+726359 <second : move f5
+726359*2*Found move:f7f5
+726593*1*Start calc, move no: 2
+726656 >first : usermove f5
+726656 <first : move Ba3
+726656*1*Found move:c1a3
+726875*2*Start calc, move no: 3
+726937 >second : usermove Ba3
+727734 <second : move b6
+727734*2*Found move:b7b6
+727953*1*Start calc, move no: 4
+728015 >first : usermove b6
+728015 <first : move Bc1
+728015*1*Found move:a3c1
+728250*2*Start calc, move no: 5
+728312 >second : usermove Bc1
+728750 <second : move Nf6
+728750*2*Found move:g8f6
+728968*1*Start calc, move no: 6
+729031 >first : usermove Nf6
+729031 <first : move c4
+729031*1*Found move:c2c4
+729234*2*Start calc, move no: 7
+729312 >second : usermove c4
+729968 <second : move e6
+729968*2*Found move:e7e6
+730203*1*Start calc, move no: 8
+730265 >first : usermove e6
+730265 <first : move Na3
+730265*1*Found move:b1a3
+730500*2*Start calc, move no: 9
+730562 >second : usermove Na3
+731125 <second : move Bxb4
+731125*2*Found move:f8b4
+731359*1*Start calc, move no: 10
+731421 >first : usermove Bxb4
+731421 <first : move g4
+731421*1*Found move:g2g4
+731656*2*Start calc, move no: 11
+731718 >second : usermove g4
+732593 <second : move Bb7
+732593*2*Found move:c8b7
+732828*1*Start calc, move no: 12
+732890 >first : usermove Bb7
+732890 <first : move h4
+732890*1*Found move:h2h4
+733125*2*Start calc, move no: 13
+733187 >second : usermove h4
+733796 <second : move Bxh1
+733796*2*Found move:b7h1
+734031*1*Start calc, move no: 14
+734093 >first : usermove Bxh1
+734093 <first : move Bg2
+734093*1*Found move:f1g2
+734328*2*Start calc, move no: 15
+734390 >second : usermove Bg2
+734796 <second : move Bxg2
+734796*2*Found move:h1g2
+735031*1*Start calc, move no: 16
+735093 >first : usermove Bxg2
+735093 <first : move Nb5
+735093*1*Found move:a3b5
+735312*2*Start calc, move no: 17
+735390 >second : usermove Nb5
+736296 <second : move Nxg4
+736296*2*Found move:f6g4
+736515*1*Start calc, move no: 18
+736578 >first : usermove Nxg4
+736578 <first : move Nh3
+736578*1*Found move:g1h3
+736812*2*Start calc, move no: 19
+736875 >second : usermove Nh3
+737859 <second : move Bxh3
+737859*2*Found move:g2h3
+738078*1*Start calc, move no: 20
+738140 >first : usermove Bxh3
+738140 <first : move e4
+738140*1*Found move:e2e4
+738359*2*Start calc, move no: 21
+738437 >second : usermove e4
+739687 <second : move c6
+739687*2*Found move:c7c6
+739906*1*Start calc, move no: 22
+739968 >first : usermove c6
+739968 <first : move f4
+739968*1*Found move:f2f4
+740203*2*Start calc, move no: 23
+740265 >second : usermove f4
+740937 <second : move Qxh4+
+740937*2*Found move:d8h4
+741171*1*Start calc, move no: 24
+741234 >first : usermove Qxh4
+741234 <first : move Ke2
+741234*1*Found move:e1e2
+741453*2*Start calc, move no: 25
+741515 >second : usermove Ke2
+742515 <second : move cxb5
+742515*2*Found move:c6b5
+742750*1*Start calc, move no: 26
+742812 >first : usermove cxb5
+742812 <first : move Qe1
+742812*1*Found move:d1e1
+743046*2*Start calc, move no: 27
+743125 >second : usermove Qe1
+743578 <second : move Qxe1+
+743578*2*Found move:h4e1
+743812*1*Start calc, move no: 28
+743875 >first : usermove Qxe1
+743875 <first : move Kxe1
+743875*1*Found move:e2e1
+744093*2*Start calc, move no: 29
+744156 >second : usermove Kxe1
+744453 <second : move bxc4
+744453*2*Found move:b5c4
+744687*1*Start calc, move no: 30
+744750 >first : usermove bxc4
+744750 <first : move exf5
+744750*1*Found move:e4f5
+744968*2*Start calc, move no: 31
+745031 >second : usermove exf5
+745250 <second : move exf5
+745250*2*Found move:e6f5
+745500*1*Start calc, move no: 32
+745562 >first : usermove exf5
+745562 <first : move a4
+745562*1*Found move:a2a4
+745812*2*Start calc, move no: 33
+745875 >second : usermove a4
+746359 <second : move 0-0
+746359*2*Found move:e8g8
+746578*1*Start calc, move no: 34
+746640 >first : usermove O-O
+746640 <first : move Re1
+746640*moveerror* Rstart piece<0 and target piece<0, can't capture own piece !...!
+746640*1*---------> Arena:Illegal move!: "Re1" ()

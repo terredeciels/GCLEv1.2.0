@@ -1,27 +1,20 @@
 package position;
 
 import static java.lang.System.*;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import org.chesspresso.position.Position;
 import static position.ICodage.*;
 import static position.ICodage.Roque.*;
-import xboard.XBoardAdapter;
+import static position.ICodage.TYPE_DE_COUPS.EnPassant;
 
 public class GPosition implements ICodage {
 
     int caseEP;
     Roque R;
     boolean[] roques;
-
     int trait;
-
     int[] etats;
-
     List<GCoups> coupsvalides;
-    List<String> coupsvalides_lan;
-    List<String> cp_coupsvalides_lan;
     boolean estEnEchec;
     String fen;
     Position position;
@@ -32,52 +25,63 @@ public class GPosition implements ICodage {
         etats = new int[NB_CELLULES];
         R = new Roque();
         roques = Roque.roques;
-
     }
 
-    public boolean exec(GCoups gcoups, UndoGCoups ug) {
+    public void e(GPosition p, int co, int cx) {
+        p.etats[co] = p.etats[cx];
+    }
+
+    public void e(GPosition p, int co) {
+        p.etats[co] = VIDE;
+    }
+
+    int typePiece(int x) {
+        return x < 0 ? -x : x;
+    }
+
+    int abs(int x) {
+        return x < 0 ? -x : x;
+    }
+
+    public boolean exec(GCoups m, UndoGCoups ug) {
         arraycopy(etats, 0, ug.etats, 0, NB_CELLULES);
         ug.setKQkq(roques);
         ug.caseEP = caseEP;
-        int caseO = gcoups.getCaseO();
-        int caseX = gcoups.getCaseX();
+        int O = m.caseO;
+        int X = m.caseX;
+        int p = m.piece;
+        TYPE_DE_COUPS t = m.type_de_coups;
         caseEP = -1;
         Roque.trait = trait;
-        if (Math.abs(gcoups.getPiece()) == PION && Math.abs(caseX - caseO) == 24) {
+
+        if (typePiece(p) == PION && abs(X - O) == nord - sud) {
             // avance de 2 cases
-            caseEP = trait == NOIR ? caseX + 12 : caseX - 12;
+            caseEP = trait == NOIR ? X + 12 : X - 12;
         }
-        switch (gcoups.getTypeDeCoups()) {
+        switch (t) {
             case Deplacement:
-                etats[caseX] = etats[caseO];
-                etats[caseO] = VIDE;
-                valideDroitRoque(gcoups);
-                break;
             case Prise:
-                etats[caseX] = etats[caseO];
-                etats[caseO] = VIDE;
-                //piece prise = tour
-                valideDroitRoque(gcoups);
+                e(this, X, O);
+                e(this, O);
+                valideDroitRoque(m);
                 break;
             case EnPassant:
-                // caseX == caseEP
-                etats[caseX] = etats[caseO];
-                etats[caseO] = VIDE;
-                if (trait == BLANC) {
-                    etats[caseX + sud] = VIDE;
-                } else if (trait == NOIR) {
-                    etats[caseX + nord] = VIDE;
+                // X == caseEP
+                e(this, X, O);
+                e(this, O);
+                if (t == EnPassant) {
+                    e(this, X + nord * trait);
                 }
                 break;
             case Promotion:
-                etats[caseX] = gcoups.getPiecePromotion();
-                etats[caseO] = VIDE;
+                etats[X] = m.piecePromotion;
+                e(this, O);
                 break;
             case Roque:
-                etats[caseX] = etats[caseO]; //ROI
-                etats[caseO] = VIDE;
-                etats[gcoups.getCaseXTour()] = etats[gcoups.getCaseOTour()]; //TOUR
-                etats[gcoups.getCaseOTour()] = VIDE;
+                e(this, X, O);
+                e(this, O);
+                e(this, m.caseXTour, m.caseOTour);
+                e(this, m.caseOTour);
                 unsetRoque();
                 break;
             default:
@@ -125,10 +129,6 @@ public class GPosition implements ICodage {
 
     public boolean isInCheck(final int pCouleur) {
         getCoupsValides(pCouleur);
-        return estEnEchec();
-    }
-
-    public boolean estEnEchec() {
         return estEnEchec;
     }
 
@@ -140,11 +140,6 @@ public class GPosition implements ICodage {
         Generateur generateur = new Generateur(this, trait);
         coupsvalides = generateur.getCoupsValides();
         estEnEchec = generateur.estEnEchec;
-        coupsvalides_lan = new ArrayList<>();
-        for (GCoups c : coupsvalides) {
-            coupsvalides_lan.add(GCoups.getString(c));
-        }
-        Collections.sort(coupsvalides_lan);
         return coupsvalides;
     }
 
@@ -167,16 +162,8 @@ public class GPosition implements ICodage {
         }
     }
 
-    public List<String> getCoupsvalides_lan() {
-        return coupsvalides_lan;
-    }
-
     public int[] getEtats() {
         return etats;
-    }
-
-    public String getFen() {
-        return fen;
     }
 
     public int getTrait() {
@@ -226,15 +213,6 @@ public class GPosition implements ICodage {
         this.trait = trait;
     }
 
-    @Override
-    public String toString() {
-        return XBoardAdapter.DEBUG ? "CP_CoupsValides : "
-                + '\n' + cp_coupsvalides_lan + '\n' + "G_CoupsValides : "
-                + '\n' + coupsvalides_lan : "G_CoupsValides : "
-                + '\n' + coupsvalides_lan;
-        //        return coupsvalides_lan.toString();
-    }
-
     public boolean hasRoques(int color) {
         int c = color == BLANC ? 0 : 2;
         return roques[0 + c] || roques[1 + c];
@@ -250,20 +228,10 @@ public class GPosition implements ICodage {
         return roques[0 + c];
     }
 
-    /**
-     * Renvoi la valeur du compteur de demi-coups depuis la dernière prise ou le
-     * dernier mouvement de pion.
-     *
-     * @return
-     */
     public final int getHalfmoveCount() {
-
         return _halfmoveCount;
     }
 
-    /**
-     * Renvoi le numéro du coup.
-     */
     public final int getFullmoveNumber() {
 
         return _fullmoveNumber;

@@ -4,15 +4,15 @@ import java.util.Objects;
 
 public class GCoups implements ICodage {
 
-    private final int PAS_DE_PIECE = -1;
-    private final int piece;
+     final int PAS_DE_PIECE = -1;
+     final int piece;
      final int caseO;
      final int caseX;
-    private final int pieceprise;
-    private final TYPE_DE_COUPS type_de_coups;
-    private final int piecePromotion;
-    private final int caseOTour;
-    private final int caseXTour;
+     final int pieceprise;
+     final TYPE_DE_COUPS type_de_coups;
+     final int piecePromotion;
+     final int caseOTour;
+     final int caseXTour;
 
     public GCoups(int piece, int caseO, int caseX, int pieceprise, TYPE_DE_COUPS type_de_coups) {
         this.piece = piece;

@@ -46,17 +46,6 @@ public class AbstractGenerateur implements ICodage {
         int couleurPiece = etats[s] < 0 ? BLANC : NOIR;
         return typeDePiece == PION && couleurPiece == couleur;
     }
-//    protected boolean pionBlanc(int s) {
-//        int typeDePiece = etats[s] < 0 ? -etats[s] : etats[s];
-//        int couleurPiece = etats[s] < 0 ? BLANC : NOIR;
-//        return typeDePiece == PION && couleurPiece == BLANC;
-//    }
-//
-//    protected boolean pionNoir(int s) {
-//        int typeDePiece = etats[s] < 0 ? -etats[s] : etats[s];
-//        int couleurPiece = etats[s] < 0 ? BLANC : NOIR;
-//        return typeDePiece == PION && couleurPiece == NOIR;
-//    }
 
     protected void ajouterCoups(int caseO, int caseX, TYPE_DE_COUPS type_de_coups) {
         if (type_de_coups != Null) {

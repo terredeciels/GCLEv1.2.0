@@ -6,8 +6,8 @@ public class GCoups implements ICodage {
 
     private final int PAS_DE_PIECE = -1;
     private final int piece;
-    private final int caseO;
-    private final int caseX;
+     final int caseO;
+     final int caseX;
     private final int pieceprise;
     private final TYPE_DE_COUPS type_de_coups;
     private final int piecePromotion;

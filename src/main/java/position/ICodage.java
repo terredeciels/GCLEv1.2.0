@@ -142,8 +142,7 @@ public interface ICodage {
     enum TYPE_DE_COUPS {
 
         Roque, EnPassant, Promotion, Deplacement, Prise, Attaque;
-        
-      
+
     }
 
     enum PieceType {
@@ -212,6 +211,9 @@ public interface ICodage {
         static boolean[] roques;
         static int trait;
 
+        public static Integer[][] roques_cases = {{e1, g1, h1, f1}, {e1, c1, a1, d1, b1},
+        {e8, g8, h8, f8}, {e8, c8, a8, d8, b8}};
+
         Roque() {
             roques = new boolean[4];
         }
@@ -271,16 +273,16 @@ public interface ICodage {
             roques[3] = false;
         }
 
-        static int caseTourH() {
-            return trait == BLANC ? h1 : h8;
+        static int caseTourH(int couleur) {
+            return couleur == BLANC ? h1 : h8;
         }
 
-        static int caseTourA() {
-            return trait == BLANC ? a1 : a8;
+        static int caseTourA(int couleur) {
+            return couleur == BLANC ? a1 : a8;
         }
 
-        static int caseRoi() {
-            return trait == BLANC ? e1 : e8;
+        static int caseRoi(int couleur) {
+            return couleur == BLANC ? e1 : e8;
         }
     }
 }

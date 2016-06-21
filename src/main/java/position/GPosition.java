@@ -103,10 +103,10 @@ public class GPosition implements ICodage {
                 unsetRoque();
                 break;
             case TOUR:
-                if (caseO == caseTourH()) {
+                if (caseO == caseTourH(trait)) {
                     unsetK(trait);
                 }
-                if (caseO == caseTourA()) {
+                if (caseO == caseTourA(trait)) {
                     unsetQ(trait);
                 }
                 break;
@@ -114,11 +114,11 @@ public class GPosition implements ICodage {
                 break;
         }
         // roi et tour à leurs places
-        if (etats[caseTourA()] != trait * TOUR || etats[caseRoi()] != trait * ROI) {
+        if (etats[caseTourA(trait)] != trait * TOUR || etats[caseRoi(trait)] != trait * ROI) {
             unsetQ(trait);
         }
 
-        if (etats[caseTourH()] != trait * TOUR || etats[caseRoi()] != trait * ROI) {
+        if (etats[caseTourH(trait)] != trait * TOUR || etats[caseRoi(trait)] != trait * ROI) {
             unsetK(trait);
         }
     }

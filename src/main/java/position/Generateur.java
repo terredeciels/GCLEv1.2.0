@@ -104,91 +104,26 @@ public class Generateur extends PGenerateur {
     /**
      * attention: -couleur
      */
-    public void ajouterRoques() {
+    private void ajouterRoques() {
         List<GCoups> coupsAttaque = new PGenerateur().pseudoCoups(gp, -couleur);
-        for (Integer rq = 0; rq < 4; rq++) {
-            possibleRoque(couleur, rq, gp, gp.etats, coupsAttaque);
-        }
-    }
+        int[] e = gp.etats;
+        for (Integer type = 0; type < 4; type++) {
+            int _c0 = o_o[type][0];
+            int _c1 = o_o[type][1];
+            int _c2 = o_o[type][2];
+            int _c3 = o_o[type][3];
+            int e_c4 = type == 1 || type == 3 ? e[o_o[type][4]] : VIDE;
 
-    public void possibleRoque(int c, int type, GPosition gp, int[] e, List<GCoups> coupsAttaque) {
-        boolean possible;
-        int _c0 = o_o[type][0];
-        int _c1 = o_o[type][1];
-        int _c2 = o_o[type][2];
-        int _c3 = o_o[type][3];
-        int e_c4 = type == 1 || type == 3 ? e[o_o[type][4]] : VIDE;
-        if (gp.roques[type]) {
-            possible = (e[_c0] == c * ROI && e[_c2] == c * TOUR && 
-                    e[_c3] == VIDE && e[_c1] == VIDE && e_c4 == VIDE);
-            possible &= !(attaqueRoque(_c0, _c3, _c1, coupsAttaque));
-            if (possible) {
-                pseudoCoups.add(new GCoups(ROI, _c0, _c1, _c2, _c3, 0, Roque));
-
+            if (gp.roques[type]) {
+                if ((e[_c0] == couleur * ROI && e[_c2] == couleur * TOUR
+                        && e[_c3] == VIDE && e[_c1] == VIDE && e_c4 == VIDE)
+                        && !(attaqueRoque(_c0, _c3, _c1, coupsAttaque))) {
+                    pseudoCoups.add(new GCoups(ROI, _c0, _c1, _c2, _c3, 0, Roque));
+                }
             }
         }
     }
 
-    /**
-     * attention: -couleur
-     */
-//    private void ajouterRoques() {
-//
-//        List<GCoups> coupsAttaque = new PGenerateur().pseudoCoups(gp, -couleur);
-//
-//        boolean possible;
-//        final GPosition pgPosition = gp;
-//        final int[] pgEtats = pgPosition.etats;
-//        if (couleur == BLANC) {
-//            if (pgPosition.roques[0]) {
-//                possible = ((pgEtats[f1] == VIDE)
-//                        && (pgEtats[h1] == -TOUR)
-//                        && (pgEtats[e1] == -ROI)
-//                        && (pgEtats[g1] == VIDE));
-//                possible &= !(attaqueRoque(e1, f1, g1, coupsAttaque));
-//
-//                if (possible) {
-//                    pseudoCoups.add(new GCoups(ROI, e1, g1, h1, f1, 0, Roque));
-//                }
-//            }
-//            if (pgPosition.roques[1]) {
-//                possible = ((pgEtats[d1] == VIDE)
-//                        && (pgEtats[a1] == -TOUR)
-//                        && (pgEtats[e1] == -ROI)
-//                        && (pgEtats[c1] == VIDE)
-//                        && (pgEtats[b1] == VIDE));
-//                possible &= !(attaqueRoque(e1, d1, c1, coupsAttaque));
-//
-//                if (possible) {
-//                    pseudoCoups.add(new GCoups(ROI, e1, c1, a1, d1, 0, Roque));
-//                }
-//            }
-//        } else {
-//            if (pgPosition.roques[2]) {
-//                possible = ((pgEtats[f8] == VIDE)
-//                        && (pgEtats[h8] == TOUR)
-//                        && (pgEtats[e8] == ROI)
-//                        && (pgEtats[g8] == VIDE));
-//                possible &= !(attaqueRoque(e8, f8, g8, coupsAttaque));
-//
-//                if (possible) {
-//                    pseudoCoups.add(new GCoups(ROI, e8, g8, h8, f8, 0, Roque));
-//                }
-//            }
-//            if (pgPosition.roques[3]) {
-//                possible = ((pgEtats[d8] == VIDE)
-//                        && (pgEtats[a8] == TOUR)
-//                        && (pgEtats[e8] == ROI)
-//                        && (pgEtats[c8] == VIDE)
-//                        && (pgEtats[b8] == VIDE));
-//                possible &= !(attaqueRoque(e8, d8, c8, coupsAttaque));
-//
-//                if (possible) {
-//                    pseudoCoups.add(new GCoups(ROI, e8, c8, a8, d8, 0, Roque));
-//                }
-//            }
-//        }
-//    }
     private boolean attaqueRoque(int E1ouE8, int F1ouF8, int G1ouG8, List<GCoups> coupsAttaque) {
         boolean attaque = false;
         int caseX;
@@ -206,26 +141,15 @@ public class Generateur extends PGenerateur {
         final int caseEP = gp.caseEP;
         // prise en passant (avant recherche d'échecs)
         if (caseEP != PAS_DE_CASE) {
-            if (couleur == BLANC) {
-                int caseX = caseEP + sudest;
-                if (pionBlanc(caseX)) {
-                    pseudoCoups.add(new GCoups(couleur * PION, caseX, caseEP, 0, EnPassant));
-                }
-                caseX = caseEP + sudouest;
-                if (pionBlanc(caseX)) {
-                    pseudoCoups.add(new GCoups(couleur * PION, caseX, caseEP, 0, EnPassant));
-                }
-            } else {
-                int caseX = caseEP + nordest;
-                if (pionNoir(caseX)) {
-                    pseudoCoups.add(new GCoups(couleur * PION, caseX, caseEP, 0, EnPassant));
-                }
-                caseX = caseEP + nordouest;
-                if (pionNoir(caseX)) {
-                    pseudoCoups.add(new GCoups(couleur * PION, caseX, caseEP, 0, EnPassant));
-                }
-            }
+            pionEstOuest(caseEP, est);
+            pionEstOuest(caseEP, ouest);
         }
     }
 
+    private void pionEstOuest(int caseEP, int estouest) {
+        int caseEstOuest = caseEP + couleur * nord + estouest;
+        if (pionDeCouleur(caseEstOuest, couleur)) {
+            pseudoCoups.add(new GCoups(couleur * PION, caseEstOuest, caseEP, 0, EnPassant));
+        }
+    }
 }

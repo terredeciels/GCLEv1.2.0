@@ -211,7 +211,7 @@ public interface ICodage {
         static boolean[] roques;
         static int trait;
 
-        public static Integer[][] roques_cases = {{e1, g1, h1, f1}, {e1, c1, a1, d1, b1},
+        public static Integer[][] o_o = {{e1, g1, h1, f1}, {e1, c1, a1, d1, b1},
         {e8, g8, h8, f8}, {e8, c8, a8, d8, b8}};
 
         Roque() {

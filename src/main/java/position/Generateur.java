@@ -101,6 +101,9 @@ public class Generateur extends PGenerateur {
         return isCheck;
     }
 
+    /**
+     * attention: -couleur
+     */
     public void ajouterRoques() {
         List<GCoups> coupsAttaque = new PGenerateur().pseudoCoups(gp, -couleur);
         for (Integer rq = 0; rq < 4; rq++) {
@@ -108,23 +111,20 @@ public class Generateur extends PGenerateur {
         }
     }
 
-    public void possibleRoque(int color, int t_roque, GPosition gp, int[] pgEtats, List<GCoups> coupsAttaque) {
+    public void possibleRoque(int c, int type, GPosition gp, int[] e, List<GCoups> coupsAttaque) {
         boolean possible;
-        Integer _c0 = roques_cases[t_roque][0];
-        Integer _c1 = roques_cases[t_roque][1];
-        Integer _c2 = roques_cases[t_roque][2];
-        Integer _c3 = roques_cases[t_roque][3];
-        Integer pgEtats_c4 = t_roque == 1 || t_roque == 3 ? pgEtats[roques_cases[t_roque][4]] : VIDE;
-        if (gp.roques[t_roque]) {
-            possible = ((pgEtats[_c0] == color * ROI)
-                    && (pgEtats[_c2] == color * TOUR)
-                    && (pgEtats[_c3] == VIDE)
-                    && (pgEtats[_c1] == VIDE)
-                    && (pgEtats_c4 == VIDE));
+        int _c0 = o_o[type][0];
+        int _c1 = o_o[type][1];
+        int _c2 = o_o[type][2];
+        int _c3 = o_o[type][3];
+        int e_c4 = type == 1 || type == 3 ? e[o_o[type][4]] : VIDE;
+        if (gp.roques[type]) {
+            possible = (e[_c0] == c * ROI && e[_c2] == c * TOUR && 
+                    e[_c3] == VIDE && e[_c1] == VIDE && e_c4 == VIDE);
             possible &= !(attaqueRoque(_c0, _c3, _c1, coupsAttaque));
             if (possible) {
                 pseudoCoups.add(new GCoups(ROI, _c0, _c1, _c2, _c3, 0, Roque));
-//                addMove(fCoups, _c0, _c1, _c2, _c3);
+
             }
         }
     }

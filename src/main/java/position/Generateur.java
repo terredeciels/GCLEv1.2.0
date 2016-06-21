@@ -32,7 +32,7 @@ public class Generateur extends PGenerateur {
 
             List<GCoups> pseudoCoupsPosSimul = new PGenerateur().pseudoCoups(positionSimul, -couleur);
 
-            estEnEchec = fEstEnEchec(pseudoCoupsPosSimul, caseRoiCouleur);
+            estEnEchec = fAttaque(caseRoiCouleur, -1, -1, pseudoCoupsPosSimul);
             if (estEnEchec) {
                 aRetirer.add(coups);
             }
@@ -89,16 +89,15 @@ public class Generateur extends PGenerateur {
         return caseRoi;
     }
 
-    private boolean fEstEnEchec(List<GCoups> pseudoCoupsPosSimul, int caseRoi) {
-        boolean isCheck = false;
-        Iterator<GCoups> it = pseudoCoupsPosSimul.iterator();
+    private boolean fAttaque(int caseRoi, int F1ouF8, int G1ouG8, List<GCoups> coups) {
+        Iterator<GCoups> it = coups.iterator();
         while (it.hasNext()) {
-            if (it.next().getCaseX() == caseRoi) {
-                isCheck = true;
-                break;
+            int caseX = it.next().getCaseX();
+            if (caseX == caseRoi || caseX == F1ouF8 || caseX == G1ouG8) {
+                return true;
             }
         }
-        return isCheck;
+        return false;
     }
 
     /**
@@ -117,24 +116,11 @@ public class Generateur extends PGenerateur {
             if (gp.roques[type]) {
                 if ((e[_c0] == couleur * ROI && e[_c2] == couleur * TOUR
                         && e[_c3] == VIDE && e[_c1] == VIDE && e_c4 == VIDE)
-                        && !(attaqueRoque(_c0, _c3, _c1, coupsAttaque))) {
+                        && !(fAttaque(_c0, _c3, _c1, coupsAttaque))) {
                     pseudoCoups.add(new GCoups(ROI, _c0, _c1, _c2, _c3, 0, Roque));
                 }
             }
         }
-    }
-
-    private boolean attaqueRoque(int E1ouE8, int F1ouF8, int G1ouG8, List<GCoups> coupsAttaque) {
-        boolean attaque = false;
-        int caseX;
-        for (GCoups coups : coupsAttaque) {
-            caseX = coups.getCaseX();
-            if ((caseX == E1ouE8) || (caseX == F1ouF8) || (caseX == G1ouG8)) {
-                attaque = true;
-                break;
-            }
-        }
-        return attaque;
     }
 
     private void ajouterCoupsEP() {

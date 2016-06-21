@@ -41,7 +41,7 @@ public class AbstractGenerateur implements ICodage {
         return etats[caseX] != OUT && etats[caseX] * couleur < 0;
     }
 
-      protected boolean pionDeCouleur(int s,int couleur) {
+    protected boolean pionDeCouleur(int s, int couleur) {
         int typeDePiece = etats[s] < 0 ? -etats[s] : etats[s];
         int couleurPiece = etats[s] < 0 ? BLANC : NOIR;
         return typeDePiece == PION && couleurPiece == couleur;
@@ -58,9 +58,10 @@ public class AbstractGenerateur implements ICodage {
 //        return typeDePiece == PION && couleurPiece == NOIR;
 //    }
 
-    protected boolean ajouterCoups(int caseO, int caseX, TYPE_DE_COUPS type_de_coups) {
-        return pseudoCoups.add(new GCoups(etats[caseO], caseO, caseX, etats[caseX], type_de_coups));
-
+    protected void ajouterCoups(int caseO, int caseX, TYPE_DE_COUPS type_de_coups) {
+        if (type_de_coups != Null) {
+            pseudoCoups.add(new GCoups(etats[caseO], caseO, caseX, etats[caseX], type_de_coups));
+        }
     }
 
     protected void addPseudoCoupsPromotion(int caseO, int caseX, int pieceprise) {

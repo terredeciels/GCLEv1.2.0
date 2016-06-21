@@ -41,7 +41,7 @@ public class PGenerateur extends AbstractGenerateur {
     }
 
     public void pseudoCoups() {
-    
+
         Iterator<Integer> it = etat.DIR_PIECE.iterator();
         switch (etat.glissant) {
             case non_glissant:
@@ -50,11 +50,9 @@ public class PGenerateur extends AbstractGenerateur {
                 } else {
                     while (it.hasNext()) {
                         int caseX = caseO + it.next();
-                        if (etats[caseX] == VIDE) {
-                            ajouterCoups(caseO, caseX, Deplacement);
-                        } else if (pieceAdverse(caseX)) {
-                            ajouterCoups(caseO, caseX, Prise);
-                        }
+                        TYPE_DE_COUPS t = etats[caseX] == VIDE ? Deplacement
+                                : pieceAdverse(caseX) ? Prise : Null;
+                        ajouterCoups(caseO, caseX, t);
                     }
                 }
                 break;

@@ -141,7 +141,7 @@ public interface ICodage {
 
     enum TYPE_DE_COUPS {
 
-        Roque, EnPassant, Promotion, Deplacement, Prise, Attaque;
+        Roque, EnPassant, Promotion, Deplacement, Prise, Attaque,Null;
 
     }
 

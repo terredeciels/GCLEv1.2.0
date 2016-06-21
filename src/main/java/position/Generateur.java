@@ -8,6 +8,9 @@ import static position.ICodage.TYPE_DE_COUPS.*;
 
 public class Generateur extends PGenerateur {
 
+    public Generateur() {
+    }
+
     public Generateur(GPosition gp, int couleur) {
         super(gp, couleur);
         this.couleur = gp.trait;
@@ -40,14 +43,6 @@ public class Generateur extends PGenerateur {
         return aRetirer;
     }
 
-    public void e(GPosition p, int co, int cx) {
-        p.etats[co] = p.etats[cx];
-    }
-
-    public void e(GPosition p, int co) {
-        p.etats[co] = VIDE;
-    }
-
     private GPosition fPositionSimul(GCoups m, int couleur) {
         GPosition p = new GPosition();
         System.arraycopy(etats, 0, p.etats, 0, NB_CELLULES);
@@ -73,7 +68,6 @@ public class Generateur extends PGenerateur {
     }
 
     private int fCaseRoi(GPosition position, int couleur) {
-//        int[] pEtats = position.etats;
         int caseRoi = OUT;
         int etatO;
         int typeO;

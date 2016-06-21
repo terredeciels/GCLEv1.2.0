@@ -7,17 +7,14 @@ import static position.ICodage.*;
 import static position.ICodage.Roque.*;
 import static position.ICodage.TYPE_DE_COUPS.EnPassant;
 
-public class GPosition implements ICodage {
+public class GPosition extends Generateur {
 
     int caseEP;
     Roque R;
     boolean[] roques;
     int trait;
-    int[] etats;
     List<GCoups> coupsvalides;
-    boolean estEnEchec;
     String fen;
-    Position position;
     public int _halfmoveCount;
     public int _fullmoveNumber;
 
@@ -25,22 +22,6 @@ public class GPosition implements ICodage {
         etats = new int[NB_CELLULES];
         R = new Roque();
         roques = Roque.roques;
-    }
-
-    public void e(GPosition p, int co, int cx) {
-        p.etats[co] = p.etats[cx];
-    }
-
-    public void e(GPosition p, int co) {
-        p.etats[co] = VIDE;
-    }
-
-    int typePiece(int x) {
-        return x < 0 ? -x : x;
-    }
-
-    int abs(int x) {
-        return x < 0 ? -x : x;
     }
 
     public boolean exec(GCoups m, UndoGCoups ug) {
@@ -98,7 +79,7 @@ public class GPosition implements ICodage {
         trait = -trait;
     }
 
-    protected void valideDroitRoque(GCoups gcoups) {
+     void valideDroitRoque(GCoups gcoups) {
         int caseO = gcoups.getCaseO();
 
         switch (gcoups.getPiece()) {
@@ -127,15 +108,11 @@ public class GPosition implements ICodage {
         }
     }
 
-    public boolean isInCheck(final int pCouleur) {
-        getCoupsValides(pCouleur);
-        return estEnEchec;
-    }
-
     public int getCaseEP() {
         return caseEP;
     }
 
+    @Override
     public List<GCoups> getCoupsValides() {
         Generateur generateur = new Generateur(this, trait);
         coupsvalides = generateur.getCoupsValides();
@@ -160,6 +137,11 @@ public class GPosition implements ICodage {
             setTrait(_trait);
             return coupsvalides;
         }
+    }
+
+    public boolean isInCheck(final int pCouleur) {
+        getCoupsValides(pCouleur);
+        return estEnEchec;
     }
 
     public int[] getEtats() {
@@ -211,21 +193,6 @@ public class GPosition implements ICodage {
 
     public void setTrait(int trait) {
         this.trait = trait;
-    }
-
-    public boolean hasRoques(int color) {
-        int c = color == BLANC ? 0 : 2;
-        return roques[0 + c] || roques[1 + c];
-    }
-
-    public boolean isGrandRoque(int color) {
-        int c = color == BLANC ? 0 : 2;
-        return roques[1 + c];
-    }
-
-    public boolean isPetitRoque(int color) {
-        int c = color == BLANC ? 0 : 2;
-        return roques[0 + c];
     }
 
     public final int getHalfmoveCount() {

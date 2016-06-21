@@ -18,7 +18,7 @@ public class FenToGPosition implements ICodage {
     private static GPosition toGPosition(Position position) {
 
         GPosition gp = new GPosition();
-        gp.position = position;
+//        gp.position = position;
 
         gp.fen = position.getFEN();
 //        gp.cp_coupsvalides_lan = getStringCPCoupsValides(position.getAllMoves());

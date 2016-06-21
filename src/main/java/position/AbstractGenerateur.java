@@ -3,9 +3,10 @@ package position;
 import java.util.*;
 import org.apache.commons.lang3.Range;
 import static org.apache.commons.lang3.Range.between;
+import static position.ICodage.Roque.roques;
 import static position.ICodage.TYPE_DE_COUPS.*;
 
-public class AbstractGenerateur implements ICodage {
+public  class AbstractGenerateur implements ICodage {
 
     protected List<GCoups> pseudoCoups;
     protected int[] etats;
@@ -58,6 +59,40 @@ public class AbstractGenerateur implements ICodage {
         pseudoCoups.add(new GCoups(couleur * PION, caseO, caseX, pieceprise, Promotion, couleur * CAVALIER));
         pseudoCoups.add(new GCoups(couleur * PION, caseO, caseX, pieceprise, Promotion, couleur * DAME));
         pseudoCoups.add(new GCoups(couleur * PION, caseO, caseX, pieceprise, Promotion, couleur * TOUR));
+    }
+
+    public boolean hasRoques(int color) {
+        int c = color == BLANC ? 0 : 2;
+        return roques[0 + c] || roques[1 + c];
+    }
+
+    public boolean isGrandRoque(int color) {
+        int c = color == BLANC ? 0 : 2;
+        return roques[1 + c];
+    }
+
+    
+
+    public boolean isPetitRoque(int color) {
+        int c = color == BLANC ? 0 : 2;
+        return roques[0 + c];
+    }
+
+    int abs(int x) {
+        return x < 0 ? -x : x;
+    }
+
+    public void e(GPosition p, int co) {
+        p.etats[co] = VIDE;
+    }
+
+    public void e(GPosition p, int co, int cx) {
+        p.etats[co] = p.etats[cx];
+    }
+
+
+    public int typePiece(int x) {
+        return x < 0 ? -x : x;
     }
 
 }
